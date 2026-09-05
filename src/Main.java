@@ -15,6 +15,7 @@ public class Main {
             System.out.println("3. Tạo việc làm");
             System.out.println("4. Cập nhật việc làm");
             System.out.println("5. Xoá việc làm");
+            System.out.println("0. Thoát");
 
             System.out.print("Nhập choice: ");
             int choice = sc.nextInt();
@@ -42,9 +43,11 @@ public class Main {
                     todoManager.deleteTodo();
                     break;
 
+                case 0:
+                    return;
+
                 default:
                     System.out.println("Invalid choice!");
-
             }
 
         }
